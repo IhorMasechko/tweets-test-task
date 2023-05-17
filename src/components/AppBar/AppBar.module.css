@@ -1,0 +1,16 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #2a363b;
+}
+
+.link:hover {
+  color: rgb(210, 107, 100);
+}
+
+.header {
+  text-align: right;
+  padding-right: 100px;
+}
