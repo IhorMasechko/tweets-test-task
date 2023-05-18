@@ -1,7 +1,38 @@
 .box {
+  height: 100vw;
+  background-color: #766a92;
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.text {
+  color: white;
+}
+
+.div {
+  display: flex;
+}
+
+.header {
   display: flex;
   justify-content: center;
-  text-align: center;
-  height: 100vw;
-  background-color: aqua;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.span {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }

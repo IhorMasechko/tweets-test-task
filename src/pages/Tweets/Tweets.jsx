@@ -1,8 +1,21 @@
-import React from "react";
+import { CardList } from "../../components/CardList/CardList";
 import css from "./Tweets.module.css";
+import { fetchUsers } from "../../redux/operations";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 const Tweets = () => {
-  return <div className={css.box}>Tweets</div>;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchUsers());
+  }, [dispatch]);
+
+  return (
+    <div className={css.box}>
+      <CardList />
+    </div>
+  );
 };
 
 export default Tweets;

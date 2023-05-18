@@ -2,6 +2,7 @@
   display: inline-block;
   text-decoration: none;
   padding: 12px;
+  font-size: 20px;
   font-weight: 700;
   color: #2a363b;
 }
@@ -11,6 +12,14 @@
 }
 
 .header {
-  text-align: right;
-  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebd8ff;
+  padding: 0 50px;
+}
+
+.name {
+  font-size: 25px;
+  color: #2a363b;
 }

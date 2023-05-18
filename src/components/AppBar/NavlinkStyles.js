@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledLink = styled(NavLink)`
   color: black;
   &.active {
-    color: blue;
+    color: #00acee;
     text-decoration-line: underline;
   }
 `;
