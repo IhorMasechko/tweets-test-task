@@ -34,8 +34,8 @@ export const CardList = () => {
   };
 
   return (
-    <div>
-      <ul className={css.list}>
+    <>
+      <div className={css.list}>
         {items.map((user) => (
           <CardItem
             id={user.id}
@@ -46,7 +46,10 @@ export const CardList = () => {
             onClick={handleOnClick}
           ></CardItem>
         ))}
-      </ul>
-    </div>
+      </div>
+      <div className={css.buttonBox}>
+        <button className={css.button}>Load more</button>
+      </div>
+    </>
   );
 };
