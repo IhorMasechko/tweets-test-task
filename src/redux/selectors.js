@@ -1,3 +1,5 @@
+import { statusFilters } from "../components/Filter/StatusFilter";
+
 export const selectUsers = (state) => state.users.items;
 
 export const selectLoading = (state) => state.users.isLoading;
@@ -14,11 +16,11 @@ export const selectVisibleTweets = (state) => {
   const iDFollowers = selectIdFollowers(state);
 
   switch (statusFilter) {
-    case statusFilter.all:
+    case statusFilters.all:
       return cards;
-    case statusFilter.follow:
+    case statusFilters.follow:
       return cards.filter((card) => !iDFollowers.includes(card.id));
-    case statusFilter.followings:
+    case statusFilters.followings:
       return cards.filter((card) => iDFollowers.includes(card.id));
     default:
       return cards;
