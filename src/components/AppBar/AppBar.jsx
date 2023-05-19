@@ -4,8 +4,8 @@ import css from "./AppBar.module.css";
 
 export const AppBar = () => {
   return (
-    <header>
-      <nav className={css.header}>
+    <header className={css.header}>
+      <nav className={css.nav}>
         <div>
           <h1 className={css.name}>TWITTER</h1>
         </div>

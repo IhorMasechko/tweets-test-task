@@ -1,8 +1,7 @@
 .box {
-  height: 100vw;
   background-color: #766a92;
-  padding-top: 60px;
-  height: 100vh;
+  padding: 120px 80px 0 80px;
+  min-height: 100vh;
 }
 
 .text {
@@ -25,7 +24,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 800px;
   margin: 0 auto;
   gap: 15px;
 }

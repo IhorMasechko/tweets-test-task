@@ -33,7 +33,6 @@ export const CardList = () => {
     return subscribed.followers - 1;
   };
 
-  console.log(items);
   return (
     <div>
       <ul className={css.list}>
