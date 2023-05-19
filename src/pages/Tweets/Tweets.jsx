@@ -3,6 +3,8 @@ import css from "./Tweets.module.css";
 import { fetchUsers } from "../../redux/operations";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { Buttonback } from "../../components/ButtonBack/Buttonback";
+import { Filter } from "../../components/Filter/Filter";
 
 const Tweets = () => {
   const dispatch = useDispatch();
@@ -13,6 +15,8 @@ const Tweets = () => {
 
   return (
     <div className={css.box}>
+      <Buttonback />
+      <Filter />
       <CardList />
     </div>
   );

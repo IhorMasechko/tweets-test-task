@@ -1,14 +1,20 @@
-import React from "react";
-import { selectUsers } from "../../redux/selectors";
+import React, { useState } from "react";
+import { selectUsers, selectLoading } from "../../redux/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { CardItem } from "../CardItem/CardItem";
 import css from "./CardList.module.css";
 import { updateFollowers } from "../../redux/operations";
+import { animateScroll } from "react-scroll";
 import { removeFollower, setFollower } from "../../redux/filterSlice";
 
 export const CardList = () => {
   const dispatch = useDispatch();
   const items = useSelector(selectUsers);
+  const isLoading = useSelector(selectLoading);
+  const [page, setPage] = useState(1);
+  const [loadMore, setLoadMore] = useState(3);
+
+  const countItems = Math.round(items.length / 3);
 
   const handleOnClick = (id, isSubscribed) => {
     const subscribed = items.filter((item) => item.id === id);
@@ -33,10 +39,24 @@ export const CardList = () => {
     return subscribed.followers - 1;
   };
 
+  const handleLoadMore = () => {
+    setLoadMore((state) => state + 3);
+    setPage((state) => state + 1);
+    smoothScroll();
+  };
+
+  const smoothScroll = () => {
+    animateScroll.scrollToBottom({
+      duration: 250,
+      delay: 10,
+      smooth: "linear",
+    });
+  };
+
   return (
     <>
       <div className={css.list}>
-        {items.map((user) => (
+        {[...items].splice(0, loadMore).map((user) => (
           <CardItem
             id={user.id}
             key={user.id}
@@ -47,9 +67,18 @@ export const CardList = () => {
           ></CardItem>
         ))}
       </div>
-      <div className={css.buttonBox}>
-        <button className={css.button}>Load more</button>
-      </div>
+
+      {!isLoading && (
+        <>
+          {page < countItems && (
+            <div className={css.buttonBox}>
+              <button className={css.button} onClick={handleLoadMore}>
+                Load more
+              </button>
+            </div>
+          )}
+        </>
+      )}
     </>
   );
 };

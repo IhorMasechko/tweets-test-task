@@ -8,7 +8,7 @@ export const selectStatusFilter = (state) => state.filter.statusFilter;
 
 export const selectIdFollowers = (state) => state.filter.idFollowers;
 
-export const getFilteredFollowers = (state) => {
+export const selectVisibleTweets = (state) => {
   const cards = selectUsers(state);
   const statusFilter = selectStatusFilter(state);
   const iDFollowers = selectIdFollowers(state);
