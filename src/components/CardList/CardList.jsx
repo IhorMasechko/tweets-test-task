@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { selectUsers, selectLoading } from "../../redux/selectors";
+import {
+  selectUsers,
+  selectLoading,
+  selectVisibleTweets,
+} from "../../redux/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { CardItem } from "../CardItem/CardItem";
 import css from "./CardList.module.css";
@@ -14,7 +18,8 @@ export const CardList = () => {
   const [page, setPage] = useState(1);
   const [loadMore, setLoadMore] = useState(3);
 
-  const countItems = Math.round(items.length / 3);
+  const filteredItems = useSelector(selectVisibleTweets);
+  const countItems = Math.round(filteredItems.length / 3);
 
   const handleOnClick = (id, isSubscribed) => {
     const subscribed = items.filter((item) => item.id === id);
@@ -56,7 +61,7 @@ export const CardList = () => {
   return (
     <>
       <div className={css.list}>
-        {[...items].splice(0, loadMore).map((user) => (
+        {[...filteredItems].splice(0, loadMore).map((user) => (
           <CardItem
             id={user.id}
             key={user.id}

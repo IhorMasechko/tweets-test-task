@@ -19,7 +19,7 @@ export const selectVisibleTweets = (state) => {
     case statusFilter.follow:
       return cards.filter((card) => !iDFollowers.includes(card.id));
     case statusFilter.followings:
-      return cards.filter((user) => iDFollowers.includes(user.id));
+      return cards.filter((card) => iDFollowers.includes(card.id));
     default:
       return cards;
   }
