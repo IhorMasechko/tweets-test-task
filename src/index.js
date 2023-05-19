@@ -11,7 +11,7 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter basename="tweets-test-task">
+      <BrowserRouter basename="/">
         <App />
       </BrowserRouter>
     </PersistGate>
