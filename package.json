@@ -1,8 +1,8 @@
 {
   "name": "tweets-test-task",
-  "homepage": "https://IhorMasechko.github.io/tweets-test-task",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://IhorMasechko.github.io/tweets-test-task/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^1.9.5",
