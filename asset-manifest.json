@@ -1,28 +1,26 @@
 {
   "files": {
     "main.css": "/tweets-test-task/static/css/main.64792cda.css",
-    "main.js": "/tweets-test-task/static/js/main.69fe456f.js",
+    "main.js": "/tweets-test-task/static/js/main.087b654b.js",
     "static/css/298.03c38921.chunk.css": "/tweets-test-task/static/css/298.03c38921.chunk.css",
     "static/js/298.20b51085.chunk.js": "/tweets-test-task/static/js/298.20b51085.chunk.js",
     "static/css/552.c529e623.chunk.css": "/tweets-test-task/static/css/552.c529e623.chunk.css",
     "static/js/552.51a5c289.chunk.js": "/tweets-test-task/static/js/552.51a5c289.chunk.js",
-    "static/js/256.98faf816.chunk.js": "/tweets-test-task/static/js/256.98faf816.chunk.js",
     "static/css/547.d6d1ff29.chunk.css": "/tweets-test-task/static/css/547.d6d1ff29.chunk.css",
     "static/js/547.d260f281.chunk.js": "/tweets-test-task/static/js/547.d260f281.chunk.js",
     "static/media/Label.png": "/tweets-test-task/static/media/Label.010ab3c33bc13f300d33.png",
     "index.html": "/tweets-test-task/index.html",
     "main.64792cda.css.map": "/tweets-test-task/static/css/main.64792cda.css.map",
-    "main.69fe456f.js.map": "/tweets-test-task/static/js/main.69fe456f.js.map",
+    "main.087b654b.js.map": "/tweets-test-task/static/js/main.087b654b.js.map",
     "298.03c38921.chunk.css.map": "/tweets-test-task/static/css/298.03c38921.chunk.css.map",
     "298.20b51085.chunk.js.map": "/tweets-test-task/static/js/298.20b51085.chunk.js.map",
     "552.c529e623.chunk.css.map": "/tweets-test-task/static/css/552.c529e623.chunk.css.map",
     "552.51a5c289.chunk.js.map": "/tweets-test-task/static/js/552.51a5c289.chunk.js.map",
-    "256.98faf816.chunk.js.map": "/tweets-test-task/static/js/256.98faf816.chunk.js.map",
     "547.d6d1ff29.chunk.css.map": "/tweets-test-task/static/css/547.d6d1ff29.chunk.css.map",
     "547.d260f281.chunk.js.map": "/tweets-test-task/static/js/547.d260f281.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64792cda.css",
-    "static/js/main.69fe456f.js"
+    "static/js/main.087b654b.js"
   ]
 }

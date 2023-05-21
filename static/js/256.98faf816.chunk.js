@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktweets_test_task=self.webpackChunktweets_test_task||[]).push([[256],{9256:function(t,e,s){s.r(e);var n=s(184);e.default=function(){return(0,n.jsxs)("main",{style:{textAlign:"center"},children:[(0,n.jsx)("b",{style:{fontSize:64},children:"404"}),(0,n.jsx)("p",{children:"Sorry, we couldn't find that movie :("})]})}}}]);
-//# sourceMappingURL=256.98faf816.chunk.js.map
