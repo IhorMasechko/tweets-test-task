@@ -2,7 +2,7 @@
   "name": "tweets-test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IhorMasechko.github.io/tweets-test-task",
+  "homepage": "https://IhorMasechko.github.io/tweets-test-task/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^1.9.5",
@@ -31,7 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint:js": "eslint src/**/*.{js,jsx}"
   },
   "eslintConfig": {
     "extends": [
