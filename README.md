@@ -2,10 +2,6 @@
 
 # Tweets | Тестове завдання GoIT
 
-## Огляд додатку
-
-![Огляд сторінки](./assets/prev-3.gif)
-
 ## Реалізація проекту
 
 - Проект зібраний за допомогою [create-react-app](https://create-react-app.dev/).
@@ -30,23 +26,19 @@
 9. Інофрмація про стано 'follow' зберігажться не на `backend`, а у кожного користувача локально, що
    дає змогу користуватись додатком одночасно декільком користувачам (див. приклад далі)
 
-![Пункт 9](./assets/prev-1.gif)
-
 ## Стек технологій
 
 ![JavaScrip](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![MUI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 
-# [Жива сторінка](https://yuriipohorilets.github.io/test-task-tweets/)
+# [Жива сторінка](https://ihormasechko.github.io/tweets-test-task/)
 
 ---
 
 # Тестове завдання:
 
 **Мета:** створити картки твітів та додати інтерактивності при клікові на кнопку.
-
-![Загальний вигляд картки у двох станах - Follow та Following](./assets/prev-0.png)
 
 <sub>Загальний вигляд картки у двох станах - `Follow` та `Following`</sub>
 

@@ -2,10 +2,6 @@
 
 # Tweets | Test task GoIT
 
-## App view
-
-![App view](./assets/prev-3.gif)
-
 ## Implementation of the project
 
 - The project was compiled with [create-react-app](https://create-react-app.dev/).
@@ -30,15 +26,13 @@
 9. Information about the `follow` status is not stored on the `backend`, but locally for each user, which
    allows multiple users to use the application at the same time (see example below)
 
-![Point 9](./assets/prev-1.gif)
-
 ## Tech Stack
 
 ![JavaScrip](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![MUI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 
-# [View a demo](https://yuriipohorilets.github.io/test-task-tweets/)
+# [View a demo](https://ihormasechko.github.io/tweets-test-task/)
 
 ---
 
